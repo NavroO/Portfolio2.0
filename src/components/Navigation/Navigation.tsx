@@ -1,6 +1,5 @@
 import React from 'react';
 import burger from '../../../assets/icons/burger.svg';
-import close from '../../../assets/icons/close.svg';
 import {IconWrapper} from "../atoms/IconWrapper/IconWrapper";
 import {NavigationWrapper} from "./Navigation.style";
 import BurgerMenu from "../molecues/BurgerMenu/BurgerMenu";

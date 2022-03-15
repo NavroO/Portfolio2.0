@@ -1,11 +1,17 @@
 import React from 'react';
 import Navigation from "../../Navigation/Navigation";
+import SideBar from "../../molecues/SideBar/SideBar";
 
-const MainTemplate = ( children: any ) => {
+interface Props {
+  children: React.ReactNode;
+}
+
+const MainTemplate:React.FC<Props> = ({children}) => {
   return(
       <>
           <Navigation />
-          {/*{children}*/}
+          <SideBar />
+          {children}
       </>
   );
 };

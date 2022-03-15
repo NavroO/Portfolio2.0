@@ -9,22 +9,25 @@ import {
 import Skills from "./Skills";
 import Contact from "./Contact";
 import Work from "./Work";
+import Home from "./Home/Home";
+import About from "./About";
 
 const Root: React.FC = () => {
     return (
         <>
             <GlobalStyle/>
             <BrowserRouter>
-                <Routes>
-                    <Route path="/" element={<div>Hello</div>}/>
-                    <Route path="/skills" element={<Skills />}/>
-                    <Route path="/contact" element={<Contact />}/>
-                    <Route path="/work" element={<Work />}/>
-                </Routes>
+                <MainTemplate>
+                    <Routes>
+                        <Route path="/" element={<Home />}/>
+                        <Route path="/about" element={<About />}/>
+                        <Route path="/skills" element={<Skills />}/>
+                        <Route path="/contact" element={<Contact />}/>
+                        <Route path="/work" element={<Work />}/>
+                    </Routes>
+                </MainTemplate>
             </BrowserRouter>
         </>
-        // <MainTemplate>
-        // </MainTemplate>
     );
 }
 
